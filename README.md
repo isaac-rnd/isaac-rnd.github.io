@@ -1,4 +1,4 @@
-<h1 align="center" id="title">React Portfolio Application @webdeveloperisaac</h1>
+<h1 align="center" id="title">React Portfolio Application @Isaac</h1>
 
 <p id="description">A Personal Portfolio for Myself Created with React⚛️ for Front End with CSS and JS Showcasing Skill and Experience in the Field inspired by </p>
 
@@ -6,15 +6,12 @@
 
 Github Profile Deployment :
 
-[https://webdeveloperisaac.github.io](https://webdeveloperisaac.github.io)
+[https://isaac-rnd.github.io](https://isaac-rnd.github.io)
 
 Google Cloud Deployment :
 
 [https://isaaconline.web.app](https://isaaconline.web.app)
 
-AWS Amplify Deployment :
-
-https://master.d1oj9qb1duhb3q.amplifyapp.com/#/
 
 Project Inspiration :
 
@@ -37,7 +34,7 @@ Here're some of the project's best features:
 <p>1. Clone the Project</p>
 
 ```
-git clone https://github.com/WebdeveloperIsaac/webdeveloperisaac.github.io
+git clone https://github.com/isaac-rnd/isaac-rnd.github.io
 ```
 
 <p>2. install packages</p>
