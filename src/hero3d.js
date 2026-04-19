@@ -14,14 +14,19 @@ const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 100);
 camera.position.set(0, 0, 10);
 
 function resize() {
-  const rect = canvas.getBoundingClientRect();
-  const w = rect.width || window.innerWidth;
-  const h = rect.height || window.innerHeight;
+  const hero = canvas.parentElement;
+  const w = hero ? hero.clientWidth : window.innerWidth;
+  const h = hero ? hero.clientHeight : window.innerHeight;
   renderer.setSize(w, h, false);
   camera.aspect = w / h;
   camera.updateProjectionMatrix();
 }
-resize();
+// Defer first resize until layout is painted so clientWidth/Height are non-zero
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', resize);
+} else {
+  resize();
+}
 window.addEventListener('resize', resize);
 
 // Accent color from tweak
