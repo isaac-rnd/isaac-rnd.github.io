@@ -1,0 +1,14 @@
+{
+  "name": "rnd-isaac-portfolio",
+  "version": "1.0.0",
+  "description": "Isaac A — R&D Engineer portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "serve . -l 3000",
+    "start": "serve . -l 3000",
+    "preview": "serve . -l 4000"
+  },
+  "devDependencies": {
+    "serve": "^14.2.3"
+  }
+}
