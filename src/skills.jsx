@@ -5,6 +5,7 @@ const SKILLS = [
   // Frontend
   { id: 'angular', label: 'Angular', cat: 'Frontend', size: 1.1 },
   { id: 'react', label: 'React', cat: 'Frontend', size: 1.1 },
+  { id: 'javascript', label: 'JavaScript', cat: 'Frontend', size: 1.1 },
   { id: 'typescript', label: 'TypeScript', cat: 'Frontend', size: 1.0 },
   { id: 'tailwind', label: 'Tailwind', cat: 'Frontend', size: 0.9 },
   { id: 'bootstrap', label: 'Bootstrap', cat: 'Frontend', size: 0.85 },
@@ -19,11 +20,13 @@ const SKILLS = [
   { id: 'databricks', label: 'Databricks', cat: 'Big Data · AI', size: 1.15 },
   { id: 'tensorflow', label: 'TensorFlow', cat: 'Big Data · AI', size: 1.05 },
   { id: 'pandas', label: 'pandas', cat: 'Big Data · AI', size: 0.95 },
-  { id: 'genai', label: 'GenAI / LLMs', cat: 'Big Data · AI', size: 1.1 },
+  { id: 'genai', label: 'GenAI / LLMs', cat: 'Big Data · AI', size: 1.15 },
+  { id: 'rag', label: 'RAG', cat: 'Big Data · AI', size: 1.05 },
   // DevOps
   { id: 'azure', label: 'Azure', cat: 'DevOps', size: 1.2 },
   { id: 'docker', label: 'Docker', cat: 'DevOps', size: 1.0 },
   { id: 'kubernetes', label: 'Kubernetes', cat: 'DevOps', size: 1.05 },
+  { id: 'helm', label: 'Helm', cat: 'DevOps', size: 0.9 },
   { id: 'terraform', label: 'Terraform', cat: 'DevOps', size: 0.9 },
   { id: 'jenkins', label: 'Jenkins', cat: 'DevOps', size: 0.85 },
   // Data
@@ -286,7 +289,7 @@ function SkillsConstellation() {
         fontFamily: 'var(--mono)', fontSize: 10, letterSpacing: '0.15em',
         color: 'var(--ink-faint)', textTransform: 'uppercase',
       }}>
-        <span>[{SKILLS.length} nodes / {CATEGORIES.length} clusters]</span>
+        <span>[{SKILLS.length} nodes · {CATEGORIES.length} clusters]</span>
         <span>Sim · 60fps · force-directed</span>
       </div>
     </div>
